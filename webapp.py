@@ -14,7 +14,6 @@ sl.title("Todo Web App")
 sl.subheader("My sample web app")
 
 for index, item in enumerate(todo_list):
-    sl.write(index)
     checkbox = sl.checkbox(item, key=item)
     if checkbox:
         todo_list.pop(index)
